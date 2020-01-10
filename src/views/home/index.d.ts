@@ -3,6 +3,5 @@ interface ITsExampleProps {
 }
 
 interface ITsExampleState {
-  name: string;
-  state: any;
+  msg: string;
 }

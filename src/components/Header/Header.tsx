@@ -1,10 +1,13 @@
 import React from "react";
+export default class Header extends React.Component<{}, { msg: string }> {
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      msg: "123"
+    };
+  }
 
-export default class Header extends React.Component {
-  state = {
-    text: "这是公共Header!"
-  };
   render() {
-    return <div>{this.state.text}</div>;
+    return <div>{this.state.msg}</div>;
   }
 }
